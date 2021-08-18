@@ -43,6 +43,19 @@ There are certain files that most GitHub repositories have:
 * Click the green "Create repository" button.
 * Now follow the directions below to clone the repo into CLion.
 
+# Access token
+GitHub now requires access tokens (instead of passwords) for command line and third party use. This is something you will need to do once at the beginning of the semester.
+## Create an access token
+Following the directions through this GitHub webpage to [create a personal access token](https://docs.github.com/en/github/authenticating-to-github/keeping-your-account-and-data-secure/creating-a-personal-access-token)
+* Set the expiration to at least 90 days (so that it lasts the entire semester).
+* When selecting the permissions, check the options for `repo` and `delete_repo`.
+
+## Saving the access token
+If you have your github username and password saved on your keychain (or would like to), make sure you copy the token once you have created it and use that as the password.
+
+## Connecting CLion to your GitHub account
+In CLion, you will want to go to File -> Settings (Windows) or CLion -> Preferences (Mac), then choose Version Control and GitHub and add your GitHub account. It will pop up with an option to log in on the website, I recommend choosing that link.
+
 # Clone a GitHub repository into CLion*
 * Click the green "⤓ Code" button from the GitHub repository page and copy the HTTPS link.
     * Note that if the repository is empty, there will not be a green button and the HTTPS link will already be visible.
